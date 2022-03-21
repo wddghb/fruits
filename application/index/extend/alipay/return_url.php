@@ -1,7 +1,3 @@
-<!DOCTYPE HTML>
-<html>
-    <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <?php
 /* *
  * 功能：支付宝页面跳转同步通知页面
@@ -51,9 +47,3 @@ else {
     //验证失败
     echo "验证失败";
 }
-?>
-        <title>支付宝电脑网站支付return_url</title>
-	</head>
-    <body>
-    </body>
-</html>

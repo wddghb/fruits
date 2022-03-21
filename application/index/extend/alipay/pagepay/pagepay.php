@@ -15,8 +15,9 @@ class PagePay
 		$payRequestBuilder->setSubject($params['subject']);
 		$payRequestBuilder->setTotalAmount($params['total_amount']);
 		$payRequestBuilder->setOutTradeNo($params['out_trade_no']);
+		$config  = $params['config']
 
-		$aop = new AlipayTradeService($params['config']);
+		$aop = new AlipayTradeService($config);
 
 		/**
 		 * pagePay 电脑网站支付请求
@@ -25,7 +26,7 @@ class PagePay
 		 * @param $notify_url 异步通知地址，公网可以访问
 		 * @return $response 支付宝返回的信息
 		*/
-		$response = $aop->pagePay($payRequestBuilder,$params['config']['return_url'],$params['config']['notify_url']);
+		$response = $aop->pagePay($payRequestBuilder,$config['return_url'],$config['notify_url']);
 
 		//输出表单
 		var_dump($response);
