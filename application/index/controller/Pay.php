@@ -2,7 +2,7 @@
 namespace app\index\controller;
 use think\Controller;
 
-class Qay  extends  Controller
+class Pay  extends  Controller
 {
     public function index()
     {
