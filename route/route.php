@@ -17,6 +17,9 @@ Route::get('hello/:name', 'index/hello');
 Route::get('/', 'index');
 Route::get('test','index/index/test');
 Route::get('pay_page','index/pay/index');
+Route::get('return_url','index/pay/return_url');
+Route::post('notify_url','index/pay/notify_url');
+Route::post('pay','index/pay/pay');
 
 
 
