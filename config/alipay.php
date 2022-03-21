@@ -36,5 +36,5 @@ return [
 		//支付宝公钥,查看地址：https://openhome.alipay.com/platform/keyManage.htm 对应APPID下的支付宝公钥。
 		'alipay_public_key' => "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAllXgKVtTyCEgyt03ijfc0cTb3VZTsToEpXYcA50Tdrk52G62fv0yL5oYBeok72+qPYPiYqj6e4FYrfbi8lYWYb9rQOh8QnBZJryeoWsVrFJ7Z/MskHK5Yl38n6OM4+DlTO5o37RmUus7MIqabdxwsH+WVJe4nxUwT2pOF2L9ZNiakhprGzXY81MtTFYAWkE08zvULokk+98ZVcKsxHxyL3GYclQS6i+2Us+9utW4U0fCJDbvBngTQqEJ66D2nhiWB93uwZE7nQOuZ7zPzbo3tVvA1zqs0D+L60KoRBvivT87ig8o4ITQKUFrytHiQ8Jvy0HRKkMM2Kd+IBFkNTTFywIDAQAB",
         //日志路径
-        'log_path' => "",
+        'log_path' => dirname(dirname(__FILE__)).'/application/index/extend/alipay/log.txt',
 ];
