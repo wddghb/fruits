@@ -9,10 +9,9 @@ class PagePay
    
     public function pay(array $params)
 	{
-	
-		//构造参数
+		
 		$payRequestBuilder = new AlipayTradePagePayContentBuilder();
-		$payRequestBuilder->setBody($params['boddy']);
+		$payRequestBuilder->setBody($params['body']);
 		$payRequestBuilder->setSubject($params['subject']);
 		$payRequestBuilder->setTotalAmount($params['total_amount']);
 		$payRequestBuilder->setOutTradeNo($params['out_trade_no']);

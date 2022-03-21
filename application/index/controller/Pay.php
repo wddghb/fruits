@@ -39,10 +39,9 @@ class Pay  extends  Controller
 	);
 	
 	
-	var_dump(dirname(__FILE__));
-	exit;
 	
-		require_once dirname(__FILE__).'/pagepay/pagepay.php';
+	
+		require_once dirname( dirname(__FILE__)).'/extend/alipay/pagepay/pagepay.php';
 		
 		$pagepay = new \PagePay();
 		
