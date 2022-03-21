@@ -38,8 +38,6 @@ class Pay  extends  Controller
 	
 	);
 	
-	var_dump($params['config']['log_path']);
-	exit;
 	
 	require_once dirname( dirname(__FILE__)).'/extend/alipay/pagepay/pagepay.php';
 		
